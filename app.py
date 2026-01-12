@@ -1,15 +1,5 @@
-import os
-import subprocess
-import sys
-
-# Forza l'installazione della libreria se manca
-try:
-    import google.generativeai as genai
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "google-generative-ai"])
-    import google.generativeai as genai
-
 import streamlit as st
+import google.generativeai as genai
 
 st.title("La mia AI Personale 🤖")
 
